@@ -10,12 +10,11 @@
 p,
 h1,
 h2,
-h3,
-{
+h3 {
     margin: 0;
 }
 
-ul {
+p, ul {
     margin: 0;
     padding: 0;
 }
@@ -44,6 +43,7 @@ body {
     list-style: none;
 }
 
+
 .header-logo,
 .header-link, 
 .link-mail, 
@@ -64,8 +64,31 @@ body {
  letter-spacing: 0.03em;
  color: var(--accent-color); 
 }
+
 span.logo-color {
-color: var(--text-color)
+color: var(--text-color);
+}
+.container-header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-cont {
+  display: flex;
+  margin-left: auto;
+
 }
 .header-link {
  font-weight: 500;
@@ -80,6 +103,9 @@ color: var(--accent-color);
 }
 .current {
   color: var(--accent-color);
+}
+.link-tel {
+  margin-left: 50px;
 }
 .link-mail,
 .link-tel {
@@ -124,7 +150,7 @@ color: var(--btn-color);
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;   
+  letter-spacing: 0.06em;  
 }
 .hero-btn:hover,
 .hero-btn:focus {
