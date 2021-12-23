@@ -5,7 +5,9 @@
     --text-color: #212121;
     --second-text-color: #757575;
     --btn-color: #FFFFFF;
+    --border-color: #EEEEEE;
 }
+
 
 p,
 h1,
@@ -382,6 +384,13 @@ span.part-color {
 .active {
   background-color: #188CE8;
 }
+.button-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.button-port
 .portfolio-title {
 font-weight: 700;
 font-size: 14px;
@@ -389,10 +398,21 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: normal;
 color: var(--text-color);
+padding-top: 20px;
 }
 .portfolio-description {
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--second-text-color);
+}
+.asign {
+  background-color: var(--second-back-color);
+  max-width: 370px;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+.list. button-list {
+  display: flex;
+  flex-wrap: wrap;
 }
