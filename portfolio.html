@@ -17,22 +17,25 @@
 <body>
     <!--шапка сайта-->
     <header class="header">
-        <nav class="header-nav">
-            <a class=" link header-logo" href="">Web<span class="logo-color">Studio</span></a>
-            <ul class="list header-list">
-                <li class="header-item"> <a class="header-link" href="./index.html">Студия</a></li>
-                <li class="header-item"><a class="header-link current" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+        <div class="container container-header">
+            <nav class="header-nav">
+                <a class=" link header-logo" href="">Web<span class="logo-color">Studio</span></a>
+                <ul class="list header-list">
+                    <li class="header-item"> <a class="header-link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="header-link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-cont">
+                <li class="list header-mail"><a class="link-mail" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="list header-tel"><a class="link-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li class="list header-mail"><a class="link-mail" href="mailto:info@example.com">info@example.com</a></li>
-            <li class="list header-tel"><a class="link-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
         <main class="portfolio">
+        <div class="container container-header">
         <section class="portfolio-buttons">
-            <ul class=list button-list>
+            <ul class="list button-list">
                 <li><button type="button" class="main-btn active">Все</button></li>
                 <li><button type="button" class="main-btn">Веб-сайты</button></li>
                 <li><button type="button" class="main-btn">Приложения</button></li>
@@ -87,19 +90,22 @@
                 </li>
             </ul>
         </section>
+        </div>
         </main>
         <!--футер-->
         <footer class="footer">
-            <a class=" link footer-logo" href="">Web<span class="part-color">Studio</span></a>
-            <address class="footer-address">
-                <ul class="list footer-list">
-                    <li class="footer-address"><a class="link-address" href="г.Киев,пр-тЛесиУкраинки,26">г. Киев,
-                            пр-т Леси Украинки,26</a></li>
-                    <li class="footer-mail"><a class="link-email" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="footer-tel"><a class="link-tell" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+            <div class="container">
+                <a class=" link footer-logo" href="">Web<span class="part-color">Studio</span></a>
+                <address class="footer-address">
+                    <ul class="list footer-list">
+                        <li class="footer-address"><a class="link-address" href="https://goo.gl/maps/5MDtbxLfWcDjbEEK8">г. Киев,
+                                пр-т Леси
+                                Украинки, 26</a></li>
+                        <li class="footer-mail"><a class="link-email" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="footer-tel"><a class="link-tell" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
         </footer>
 </body>
 
