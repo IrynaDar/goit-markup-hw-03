@@ -23,17 +23,21 @@ button {
     cursor: pointer;
   }
   
+  img {
+    display: block;
+  }
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 
 body {
   font-family: Roboto, Raleway, sans-serif; ;
@@ -56,46 +60,61 @@ body {
 }
 /* --------шапка сайта------------ */
 
-.header-logo {
- font-family: Raleway;
- font-weight: 700;
- font-size: 26px;
- line-height: 1.19;
- letter-spacing: 0.03em;
- color: var(--accent-color); 
-}
-
-span.logo-color {
-color: var(--text-color);
-}
-.container-header {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+.container {
+  width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   align-items: center;
+}
+
+.header-link {
+  display: block;
+  padding: 32px;
+}
+.header-list {
+  display: flex;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
-.header-list {
+.container-header {
   display: flex;
 }
 .header-cont {
   display: flex;
   margin-left: auto;
-
 }
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--second-text-color);
+}
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color); 
+  margin-right: 93px;
+}
+
+span.logo-color {
+color: var(--text-color);
+}
+.header-item:not (:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
- font-weight: 500;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.02em;
- color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -109,13 +128,13 @@ color: var(--accent-color);
 }
 .link-mail,
 .link-tel {
- font-family: inherit;
- font-weight: 500;
- font-style: normal;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.02em;
- color:var(--second-text-color)
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color:var(--second-text-color)
 }
 .link-mail:hover,
 .link-mail:focus,
@@ -129,15 +148,22 @@ color: var(--accent-color);
   background-color: var(--back-color);
   text-align: center;
 }
+
 .hero-title {
 font-family: inherit;
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
+text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--btn-color);
+width: 696px;
+padding-top: 200px;
+padding-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
 }
 .hero-btn {
   background-color: var(--accent-color);
@@ -147,18 +173,33 @@ color: var(--btn-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;  
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188CE8;
+  background-color: var(--back-color);
 }
 /* --------преимущества------------ */
 
-.advantages-title {
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-list .item {
+  width: 270px;
+  margin-right: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-list .item:nth-child(4n) {
+  margin-right: 0px;
+
+  .advantages-title {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -185,6 +226,12 @@ color: var(--btn-color);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.functions {
+  padding-bottom: 94px;
 }
 
 
@@ -200,6 +247,8 @@ color: var(--btn-color);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 .team-member {
   font-family: inherit;
@@ -217,18 +266,21 @@ color: var(--btn-color);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-
+.list.team-list {
+  padding-bottom: 94px;
+}
 /* --------футер------------ */
 .footer {
   background-color: var(--back-color);
+  padding: 60px
 }
 .footer-logo {
- font-family: Raleway;
- font-weight: 700;
- font-size: 26px;
- line-height: 1.19;
- letter-spacing: 0.03em;
- color: var(--accent-color); 
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color); 
 }
 span.part-color {
   color: var(--btn-color);
@@ -237,17 +289,17 @@ span.part-color {
   font-style: normal;
 }
 .link-address {
- font-size: 14px;
- line-height: 1.71;
- letter-spacing: 0.03em;
- color: var(--btn-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--btn-color);
 }
 .link-email,
 .link-tell {
- font-size: 14px;
- line-height: 1.71;
- letter-spacing: 0.03em;
- color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .link-email:hover,
 .link-email:focus,
