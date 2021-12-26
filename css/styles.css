@@ -151,10 +151,8 @@ color: var(--accent-color);
 .hero {
   background-color: var(--back-color);
   text-align: center;
-}
-.hero-container {
-padding-top: 200px;
-padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
 display: block;
@@ -196,7 +194,7 @@ margin-right: auto;
 }
 /* --------преимущества------------ */
 
-.advant-container {
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -235,11 +233,13 @@ margin-right: auto;
 
 /* --------чем занимаемся------------ */
 
+.functions {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .funct-container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .functions-title {
@@ -266,12 +266,10 @@ margin-right: auto;
   margin-right: 0px;
 }
 /* --------наша команда------------ */
-.team-container {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
 .team {
   background-color: var(--second-back-color);
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -316,6 +314,7 @@ margin-right: auto;
 .picture-asign {
   background-color: var(--btn-color);
   padding-bottom: 30px;
+  padding-top: 30px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -323,12 +322,10 @@ margin-right: auto;
   border-bottom-color:var(--second-text-color)
 }
 /* --------футер------------ */
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer {
   background-color: var(--back-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: Raleway;
@@ -377,10 +374,6 @@ span.part-color {
   padding-bottom: 94px;
 }
 .main-btn {
-  min-width: 128px;
-  min-height: 38px;
-  left: 576px;
-  top: 174px;
   font: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -407,15 +400,16 @@ span.part-color {
 .btn-top:not(:last-child) {
   margin-right: 8px;
 }
-.button-port
-.portfolio-title {
+.asign .portfolio-title {
+font-family: Roboto;
 font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: normal;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
 color: var(--text-color);
-margin-bottom: 4px;
+margin-bottom: 10px;
 }
 .portfolio-description {
 font-size: 16px;
@@ -428,11 +422,7 @@ color: var(--second-text-color);
   max-width: 370px;
   border: 1px solid var(--border-color);
   box-sizing: border-box;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--second-text-color);
   padding: 20px 24px;
-  ;
 }
 .portflio-list {
   display: flex;
