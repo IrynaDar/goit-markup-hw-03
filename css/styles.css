@@ -425,16 +425,17 @@ color: var(--second-text-color);
 .portflio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: calc((100% - 60px) /3);
 }
-.portflio-list .port-project {
-  display: block;
-  max-width: 370px;
+
+.port-project {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portflio-list .port-project:nth-child(3n) {
+.port-project:nth-child(3n) {
   margin-right: 0px;
 }
-.list .port-project:nth-child(n + 6) {
+.port-project:nth-child(n + 6) {
   margin-bottom: 0;
 }
