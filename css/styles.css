@@ -228,7 +228,6 @@ margin-right: auto;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  display: 
 }
 
 /* --------чем занимаемся------------ */
@@ -268,7 +267,7 @@ margin-right: auto;
 /* --------наша команда------------ */
 .team {
   background-color: var(--second-back-color);
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .team-list {
@@ -292,7 +291,6 @@ margin-right: auto;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .team-member {
   font-family: inherit;
@@ -369,7 +367,7 @@ span.part-color {
 }
 
   /* -------ПОРТФОЛИО------------ */
-.portfolio-container {
+.portfolio-info {
   padding-top: 94px;
   padding-bottom: 94px;
 }
